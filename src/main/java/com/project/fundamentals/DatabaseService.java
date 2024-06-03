@@ -2,11 +2,12 @@ package com.project.fundamentals;
 
 import java.util.List;
 
-public interface DatabaseService {
+public interface DatabaseService<T> {
 
+    //Aplicando programación generica
     //methods
-    public String getById(Long id);
-    public List<String> getAllRecords();
+    public T getById(Long id);
+    public List<T> getAllRecords();
 
 
 
